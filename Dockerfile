@@ -6,4 +6,4 @@ RUN apt-get update -y
 #RUN apt-get install -y libcurl4-openssl-dev ssh nano pkg-config libssl-dev
 RUN apt-get update && \
     apt-get install --assume-yes gpg libdbd-mysql-perl libapache2-mod-fcgid apache2 wget locales less gettext
-RUN service php7.2-fpm start
+RUN service php:7.2-fpm-stretch restart
