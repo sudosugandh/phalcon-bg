@@ -7,5 +7,5 @@ RUN apt-get update -y
 RUN apt-get update && \
     apt-get install --assume-yes gpg libdbd-mysql-perl libapache2-mod-fcgid apache2 wget locales less gettext
 #RUN php:7.2-fpm-stretch restart
-CMD ["php-fpm"]
-EXPOSE 9000
+#CMD ["php-fpm"]
+#EXPOSE 9000
