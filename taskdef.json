@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/td-phalcon",
+          "awslogs-group": "/ecs/td-backend",
           "awslogs-region": "ap-south-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:660645611558:task-definition/td-phalcon:1",
-  "family": "td-phalcon",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:660645611558:task-definition/td-backend:1",
+  "family": "td-backend",
   "requiresAttributes": [
     {
       "targetId": null,
