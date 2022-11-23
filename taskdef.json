@@ -9,8 +9,8 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/tdd-phalcon",
-          "awslogs-region": "ap-south-1",
+          "awslogs-group": "/ecs/td-phalcon",
+          "awslogs-region": "eu-west-2",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -58,14 +58,14 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "512",
+  "memory": "1024",
   "taskRoleArn": "arn:aws:iam::457522136516:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:457522136516:task-definition/tdd-phalcon:1",
-  "family": "tdd-phalcon",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-2:457522136516:task-definition/td-phalcon:1",
+  "family": "td-phalcon",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -125,7 +125,7 @@
     "operatingSystemFamily": "LINUX",
     "cpuArchitecture": null
   },
-  "cpu": "256",
+  "cpu": "512",
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
