@@ -10,7 +10,7 @@
         "secretOptions": null,
         "options": {
           "awslogs-group": "/ecs/td-phalcon",
-          "awslogs-region": "us-east-1",
+          "awslogs-region": "eu-west-2",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -64,7 +64,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:222191613406:task-definition/td-phalcon:1",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-2:222191613406:task-definition/td-phalcon:1",
   "family": "td-phalcon",
   "requiresAttributes": [
     {
