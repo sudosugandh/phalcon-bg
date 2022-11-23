@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::660645611558:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::222191613406:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/td-backend",
+          "awslogs-group": "/ecs/td-phalcon",
           "awslogs-region": "ap-south-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -58,14 +58,14 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "1024",
-  "taskRoleArn": "arn:aws:iam::660645611558:role/ecsTaskExecutionRole",
+  "memory": "512",
+  "taskRoleArn": null,
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:660645611558:task-definition/td-backend:1",
-  "family": "td-backend",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:222191613406:task-definition/td-phalcon:1",
+  "family": "td-phalcon",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -95,12 +95,6 @@
       "targetId": null,
       "targetType": null,
       "value": null,
-      "name": "com.amazonaws.ecs.capability.task-iam-role"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
       "name": "ecs.capability.execution-role-ecr-pull"
     },
     {
@@ -125,7 +119,7 @@
     "operatingSystemFamily": "LINUX",
     "cpuArchitecture": null
   },
-  "cpu": "512",
+  "cpu": "256",
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
