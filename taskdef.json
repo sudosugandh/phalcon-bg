@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::457522136516:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::222191613406:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -59,12 +59,12 @@
   ],
   "placementConstraints": [],
   "memory": "1024",
-  "taskRoleArn": "arn:aws:iam::457522136516:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::222191613406:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:457522136516:task-definition/phalcon-td:1",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/phalcon-td:1",
   "family": "phalcon-td",
   "requiresAttributes": [
     {
