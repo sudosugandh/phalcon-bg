@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::222191613406:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::457522136516:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -10,7 +10,7 @@
         "secretOptions": null,
         "options": {
           "awslogs-group": "/ecs/td-phalcon",
-          "awslogs-region": "eu-west-2",
+          "awslogs-region": "ap-south-1",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -59,12 +59,12 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": "arn:aws:iam::222191613406:role/ecsTaskExecutionRole",
+  "taskRoleArn": null,
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-2:222191613406:task-definition/td-phalcon:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:457522136516:task-definition/td-phalcon:1",
   "family": "td-phalcon",
   "requiresAttributes": [
     {
@@ -90,12 +90,6 @@
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.task-iam-role"
     },
     {
       "targetId": null,
